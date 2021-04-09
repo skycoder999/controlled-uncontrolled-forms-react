@@ -32,7 +32,7 @@ const Form2 = () => {
 	};
 
 	const showLocalStorageValue = () => {
-		if (JSON.parse(localStorage.getItem("todoslist")) !== null) {
+		if (JSON.parse(localStorage.getItem("todoslist"))) {
 			const itemsinlocalstorage = JSON.parse(localStorage.getItem("todoslist"));
 			setShowTodo(itemsinlocalstorage);
 		} else setShowTodo(["No Item to show"]);
